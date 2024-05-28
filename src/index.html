@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="./output.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <section class="w-screen h-screen flex flex-col justify-center items-center  ">
+        <div id="calculator" class=" w-72 h-74  ">
+            <input class="w-full h-12 text-3xl text-white font-bold p-6 bg-gray-300 hello" type="text" id="display" readonly>
+            <div id="keys" class="w-full h-full p-5 gap-3 border border-solid bg-black  border-black">
+                <button class="w-14 h-14 mt-2 rounded-full font-bold hover:bg-yellow-300 bg-yellow-500 text-white text-2xl   border border-solid border-black" onclick="appendToDisplay('+')">+</button>
+                <button class="w-14 h-14 mt-2 rounded-full font-bold bg-gray-500 text-white text-2xl  border border-solid border-black" onclick="appendToDisplay('7')">7</button>
+                <button class="w-14 h-14 mt-2 rounded-full font-bold bg-gray-500 text-white text-2xl  border border-solid border-black" onclick="appendToDisplay('8')">8</button>
+                <button class="w-14 h-14 mt-2 rounded-full font-bold bg-gray-500 text-white text-2xl border border-solid border-black" onclick="appendToDisplay('9')">9</button>
+                <button class="w-14 h-14 mt-2 rounded-full font-bold  hover:bg-yellow-300 bg-yellow-500 text-white text-2xl border border-solid border-black" onclick="appendToDisplay('-')">-</button>
+                <button class="w-14 h-14 mt-2 rounded-full font-bold bg-gray-500 text-white text-2xl border border-solid border-black" onclick="appendToDisplay('4')">4</button>
+                <button class="w-14 h-14 mt-2 rounded-full font-bold bg-gray-500 text-white text-2xl border border-solid border-black" onclick="appendToDisplay('5')">5</button>
+                <button class="w-14 h-14 mt-2 rounded-full font-bold bg-gray-500 text-white text-2xl border border-solid border-black" onclick="appendToDisplay('6')">6</button>
+                <button class="w-14 h-14 mt-2 rounded-full font-bold  hover:bg-yellow-300 bg-yellow-500 text-white text-2xl  border border-solid border-black" onclick="appendToDisplay('*')">*</button>
+                <button class="w-14 h-14 mt-2 rounded-full  font-bold bg-gray-500 text-white text-2xl border border-solid border-black" onclick="appendToDisplay('1')">1</button>
+                <button class="w-14 h-14 mt-2 rounded-full font-bold bg-gray-500 text-white text-2xl border border-solid border-black" onclick="appendToDisplay('2')">2</button>
+                <button class="w-14 h-14 mt-2 rounded-full font-bold bg-gray-500 text-white text-2xl border border-solid border-black"  onclick="appendToDisplay('3')">3</button>
+                <button class="w-14 h-14 mt-2 rounded-full font-bold  hover:bg-yellow-300 bg-yellow-500 text-white text-2xl  border border-solid border-black" onclick="appendToDisplay('/')">/</button>
+                <button class="w-14 h-14 mt-2 rounded-full font-bold bg-gray-500 text-white text-2xl border border-solid border-black"  onclick="appendToDisplay('0')">0</button>
+                <button class="w-14 h-14 mt-2 rounded-full font-bold bg-gray-500 text-white text-2xl border border-solid border-black"  onclick="appendToDisplay('.')">.</button>
+                <button class="w-14 h-14 mt-2 rounded-full font-bold bg-gray-500 text-white text-2xl border border-solid border-black" onclick="calculate('=')">=</button>
+                <button class="w-14 h-14 mt-2 rounded-full font-bold  hover:bg-yellow-300 bg-yellow-500 text-white text-2xl border border-solid border-black" onclick="clearDisplay('C')">C</button>
+                
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

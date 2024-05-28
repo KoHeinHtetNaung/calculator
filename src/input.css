@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hello {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
